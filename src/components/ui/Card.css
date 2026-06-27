@@ -1,0 +1,46 @@
+.card {
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-default {
+  background: rgba(13, 32, 64, 0.6);
+  border: 1px solid rgba(34, 211, 238, 0.1);
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+}
+
+.card-glass {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+}
+
+.card-dark {
+  background: rgba(7, 20, 40, 0.8);
+  border: 1px solid rgba(34, 211, 238, 0.08);
+  padding: 2rem;
+}
+
+.card-accent {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(99, 102, 241, 0.08));
+  border: 1px solid rgba(34, 211, 238, 0.15);
+  padding: 2rem;
+}
+
+.card-hover {
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.card-glow:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(34, 211, 238, 0.15);
+}

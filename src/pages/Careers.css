@@ -1,0 +1,77 @@
+.perk-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.85rem;
+}
+
+.perk-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.perk-desc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.65;
+}
+
+.openings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.job-card {}
+
+.job-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.job-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.job-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.job-team {
+  color: var(--cyan-500);
+  font-weight: 600;
+}
+
+.job-sep { color: var(--gray-700); }
+
+.job-level {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  color: var(--electric-light);
+  padding: 0.15rem 0.6rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.job-loc, .job-type {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  .job-info { flex-direction: column; align-items: flex-start; }
+}

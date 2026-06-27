@@ -1,0 +1,121 @@
+.services-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.service-detail-item {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 5rem;
+  align-items: center;
+}
+
+.service-detail-item.reverse {
+  grid-template-columns: 380px 1fr;
+}
+
+.service-detail-item.reverse .service-detail-content { order: 2; }
+.service-detail-item.reverse .service-detail-card { order: 1; }
+
+.service-icon-lg {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.service-tagline {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cyan-500);
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.service-detail-desc {
+  color: var(--gray-400);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  font-size: 0.97rem;
+}
+
+.service-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--gray-300);
+}
+
+.service-features li svg {
+  color: var(--emerald);
+  flex-shrink: 0;
+}
+
+.service-detail-card {
+  text-align: center;
+}
+
+.service-icon-xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.service-stat {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.03em;
+}
+
+.service-stat-label {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.service-icon-cyan { background: rgba(34, 211, 238, 0.12); color: var(--cyan-400); }
+.service-icon-electric { background: rgba(99, 102, 241, 0.12); color: var(--electric-light); }
+.service-icon-emerald { background: rgba(16, 185, 129, 0.12); color: var(--emerald); }
+.service-icon-amber { background: rgba(245, 158, 11, 0.12); color: var(--amber); }
+.service-icon-rose { background: rgba(244, 63, 94, 0.12); color: var(--rose); }
+
+@media (max-width: 1024px) {
+  .service-detail-item,
+  .service-detail-item.reverse {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .service-detail-item.reverse .service-detail-content { order: 1; }
+  .service-detail-item.reverse .service-detail-card { order: 2; }
+}

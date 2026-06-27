@@ -1,0 +1,94 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.25s var(--ease-out);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.08);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.btn:hover::before { opacity: 1; }
+
+/* Sizes */
+.btn-sm { padding: 0.5rem 1.1rem; font-size: 0.82rem; }
+.btn-md { padding: 0.72rem 1.5rem; font-size: 0.92rem; }
+.btn-lg { padding: 0.9rem 2rem; font-size: 1rem; }
+.btn-xl { padding: 1.1rem 2.4rem; font-size: 1.05rem; }
+
+/* Primary */
+.btn-primary {
+  background: linear-gradient(135deg, var(--cyan-500), var(--electric));
+  color: white;
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(34, 211, 238, 0.4);
+}
+.btn-primary:active { transform: translateY(0); }
+
+/* Outline */
+.btn-outline {
+  background: transparent;
+  color: var(--cyan-400);
+  border: 1.5px solid var(--cyan-500);
+}
+.btn-outline:hover {
+  background: rgba(34, 211, 238, 0.08);
+  transform: translateY(-2px);
+  border-color: var(--cyan-400);
+}
+
+/* Ghost */
+.btn-ghost {
+  background: rgba(255,255,255,0.06);
+  color: var(--gray-200);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+/* White */
+.btn-white {
+  background: var(--white);
+  color: var(--navy-900);
+}
+.btn-white:hover {
+  background: var(--gray-100);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+}
+
+/* Disabled */
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}

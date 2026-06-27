@@ -1,0 +1,39 @@
+.section-title {
+  margin-bottom: 3rem;
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.section-title-center .section-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-eyebrow {
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-top: 0.75rem;
+}
+
+.section-heading-xl { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+.section-heading-lg { font-size: clamp(1.9rem, 3.5vw, 3rem); }
+.section-heading-md { font-size: clamp(1.5rem, 2.5vw, 2.2rem); }
+.section-heading-sm { font-size: clamp(1.2rem, 2vw, 1.6rem); }
+
+.section-description {
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--gray-400);
+  max-width: 600px;
+}
